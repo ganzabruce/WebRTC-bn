@@ -37837,9 +37837,9 @@ var require_main = __commonJS({
 });
 
 // src/index.js
-var import_express2 = __toESM(require_express2(), 1);
-var import_http = __toESM(require("http"), 1);
-var import_cors = __toESM(require_lib3(), 1);
+var import_express2 = __toESM(require_express2());
+var import_http = __toESM(require("http"));
+var import_cors = __toESM(require_lib3());
 
 // node_modules/socket.io/wrapper.mjs
 var import_dist = __toESM(require_dist2(), 1);
@@ -37920,7 +37920,7 @@ var rooms = new RoomsService();
 var rooms_default = rooms;
 
 // src/routes/rooms.js
-var import_express = __toESM(require_express2(), 1);
+var import_express = __toESM(require_express2());
 var router = import_express.default.Router();
 router.post("/", (req, res) => {
   const { id } = req.body || {};
@@ -37941,7 +37941,7 @@ function errorHandler(err, _req, res, _next) {
 }
 
 // src/index.js
-var import_dotenv = __toESM(require_main(), 1);
+var import_dotenv = __toESM(require_main());
 import_dotenv.default.config();
 var app = (0, import_express2.default)();
 app.use((0, import_cors.default)({ origin: "*" }));
